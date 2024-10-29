@@ -6,11 +6,11 @@ import { Outlet } from "react-router-dom";
 const Root = () => {
   return (
     <div>
-      <div className="container mx-auto h-screen text-center">
+      <div className="container mx-auto  ">
         <Header />
         <Outlet></Outlet>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
