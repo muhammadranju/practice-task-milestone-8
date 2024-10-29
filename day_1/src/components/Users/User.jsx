@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const User = () => {
   const user = useLoaderData();
@@ -6,6 +6,9 @@ const User = () => {
   const handelBack = () => {
     navigate(-1);
   };
+
+  const { userId } = useParams();
+  console.log(userId);
   return (
     <div>
       <button

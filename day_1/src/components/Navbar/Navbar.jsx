@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar bg-base-100">
@@ -25,46 +25,46 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to={"/"}>Home</Link>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <Link to={"/about"}>About</Link>
+              <NavLink to={"/about"}>About</NavLink>
             </li>
             <li>
-              <Link to={"/contact"}>Contact</Link>
+              <NavLink to={"/contact"}>Contact</NavLink>
             </li>
             <li>
-              <Link to={"/login"}>Login</Link>
+              <NavLink to={"/login"}>Login</NavLink>
             </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl" to={"/"}>
+        <NavLink className="btn btn-ghost text-xl" to={"/"}>
           daisyUI
-        </Link>
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to={"/"}>Home</Link>
+            <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
-            <Link to={"/about"}>About</Link>
+            <NavLink to={"/about"}>About</NavLink>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <NavLink to={"/contact"}>Contact</NavLink>
           </li>
           <li>
-            <Link to={"/users"}>Users</Link>
+            <NavLink to={"/users"}>Users</NavLink>
           </li>
           <li>
-            <Link to={"/posts"}>Posts</Link>
+            <NavLink to={"/posts"}>Posts</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn" to={"/login"}>
+        <NavLink className="btn" to={"/login"}>
           Login
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

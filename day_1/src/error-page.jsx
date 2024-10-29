@@ -13,12 +13,6 @@ const ErrorPage = () => {
   if (error.status === 404) {
     return (
       <>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          onClick={handelBack}
-        >
-          Back
-        </button>
         <Header />
         <div
           id="error-page"
@@ -27,6 +21,13 @@ const ErrorPage = () => {
           <h1 className="text-4xl">Oops!</h1>
           <p>Sorry, an unexpected error has occurred.</p>
           <p>{error.statusText || error.message}</p>
+          <p>{error.status}</p>{" "}
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={handelBack}
+          >
+            Back
+          </button>
         </div>
         <Footer />
       </>
@@ -35,12 +36,6 @@ const ErrorPage = () => {
 
   return (
     <>
-      <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        onClick={handelBack}
-      >
-        Back
-      </button>
       <Header />
       <div
         id="error-page"
@@ -49,6 +44,13 @@ const ErrorPage = () => {
         <h1 className="text-4xl">Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>
         <p>{error.statusText || error.message}</p>
+        <p>{error.status}</p>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={handelBack}
+        >
+          Back
+        </button>
       </div>
       <Footer />
     </>
