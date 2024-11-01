@@ -4,9 +4,9 @@ import Footer from "../layout/Footer/Footer";
 const ErrorPage = () => {
   const error = useRouteError();
   return (
-    <>
+    <div className="container mx-auto">
       <Header />
-      <div className="text-center text-5xl font-bold text-red-500">
+      <div className="text-center text-5xl font-bold text-red-500 min-h-[calc(100vh-120px)]">
         <h1>Oops! Something went wrong.</h1>
         <h2>
           <i>{error.statusText || error.message}</i>
@@ -16,7 +16,7 @@ const ErrorPage = () => {
         </button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
