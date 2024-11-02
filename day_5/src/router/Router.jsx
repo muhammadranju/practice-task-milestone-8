@@ -23,6 +23,11 @@ const Router = createBrowserRouter([
             element: <CoffeeCategory />,
             loader: () => fetch("../coffees.json"),
           },
+          {
+            path: "/",
+            element: <CoffeeCategory />,
+            loader: () => fetch("../coffees.json"),
+          },
         ],
       },
       {

@@ -4,7 +4,6 @@ import Header from "../../layout/Header/Header.jsx";
 import Heading from "../../layout/Header/Heading.jsx";
 const Home = () => {
   const category = useLoaderData();
-  // console.log(category);
 
   return (
     <div>
