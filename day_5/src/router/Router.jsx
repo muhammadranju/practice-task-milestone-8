@@ -44,6 +44,7 @@ const Router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+        loader: () => fetch("../coffees.json"),
       },
     ],
   },

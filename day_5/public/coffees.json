@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    " ": "Espresso",
+    "name": "Espresso",
     "image": "https://i.ibb.co.com/6XPk3nf/espresso.webp",
     "category": "Brewed Coffee",
     "ingredients": ["Coffee Beans", "Water"],
